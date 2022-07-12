@@ -1,0 +1,40 @@
+21:18:56.845 request:
+1 > GET https://gorest.co.in/public/v2/users/3333
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+21:18:58.216 response time in milliseconds: 1367.35
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 7292af32a98b74dd-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 11 Jul 2022 15:48:37 GMT
+1 < ETag: W/"97030b9bf8ea00742c4d02ee78224264"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=QvJ7H4UKWrSa35AvciViMZq%2BItMlBO4yO%2BqX5CKOpYi6j%2FglqYc5yBxDRmoz7HbDc6ItpkcnsF2pIm8gehU7xS%2F4R0neo0UazgSiuQpSJ6hzaqQH5eguBZWKAjrLJrE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: d9c2bb34-561a-404d-bba2-ed73361ecee8
+1 < X-Runtime: 0.017605
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":3333,"name":"Gandharva Marar","email":"marar_gandharva@klocko-buckridge.net","gender":"male","status":"active"}
+
+21:18:58.217 status code was: 200, expected: 404, response time: 1367, url: https://gorest.co.in/public/v2/users/3333, response: {"id":3333,"name":"Gandharva Marar","email":"marar_gandharva@klocko-buckridge.net","gender":"male","status":"active"}

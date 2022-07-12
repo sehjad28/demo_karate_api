@@ -1,0 +1,44 @@
+21:02:38.407 scenario called at line: 7 by tag: @mytest1
+21:02:38.501 url not set, please refer to the keyword documentation for 'url'
+21:02:38.501 http request failed: url not set, please refer to the keyword documentation for 'url'
+nt-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+21:00:54.605 response time in milliseconds: 633.51
+1 < 404
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 729294be3d597702-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 11 Jul 2022 15:30:33 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6UDoKeBWy7wEowua09Hr2h%2B4rDnbYfd34gzIbdhVgsrh8NEblTY7N8pgVFVk1r6I447d%2Fvj%2BT4cEksZrRBO7y0ly%2FzcSGPuCARaOFRauHy%2FUsHpBhd2qj9C5cJx0WXM%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 86
+1 < X-RateLimit-Reset: 4
+1 < X-Request-Id: 2588ecec-2587-4323-9252-d2a10b950f84
+1 < X-Runtime: 0.015138
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}
+
+"}
+
+
+
+ status code was: 404, expected: 204, response time: 321, url: https://gorest.co.in/public/v2/users/11111, response: {"message":"Resource not found"}
+t found"}
+d"}
+}

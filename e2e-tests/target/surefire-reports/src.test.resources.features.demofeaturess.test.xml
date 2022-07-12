@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/resources/features/demofeaturess/test.feature" skipped="0" tests="1" time="0.21063">
+  <testcase classname="src.test.resources.features.demofeaturess.test" name="Just Print" time="0.21063">
+    <system-out>* print 'Demo test' ....................................................... passed
+* print getTomorrowDate() ................................................. passed
+* def test = getHeaders() ................................................. passed
+* print test .............................................................. passed</system-out>
+  </testcase>
+</testsuite>

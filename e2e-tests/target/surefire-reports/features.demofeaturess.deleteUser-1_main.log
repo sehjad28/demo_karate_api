@@ -1,0 +1,39 @@
+20:17:20.029 request:
+1 > DELETE https://gorest.co.in/public/v2/users/%3C%3E
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+20:17:20.992 response time in milliseconds: 962.36
+1 < 400
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 729254ef0b5174e1-LHR
+1 < Connection: keep-alive
+1 < Date: Mon, 11 Jul 2022 14:46:59 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JaB%2B6KK4SS%2FIKuQF77NlfcFM4b68VM%2FwRp2Mo1Q32L7DvXdnGkzsI2jNKpkjUzzogMavjQ7070ykqyhQ2SD48iQzKpgrFkT35hrBHR8ExRF9ZRCRfo685I0v6APEaTU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+20:17:20.995 status code was: 400, expected: 204, response time: 962, url: https://gorest.co.in/public/v2/users/%3C%3E, response: 
+ng: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: 4af5a8ab-8409-4748-baa2-488de649f31e
+1 < X-Runtime: 0.013679
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}
+
+20:12:23.909 status code was: 404, expected: 204, response time: 1286, url: https://gorest.co.in/public/v2/users/5555, response: {"message":"Resource not found"}
