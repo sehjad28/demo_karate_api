@@ -10,9 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-         <module>demo-provider-test</module>
-        <module>demo-consumer-test</module>
-        <module>e2e-tests</module>
+               <module>e2e-tests</module>
     </modules>
 
     <properties>
