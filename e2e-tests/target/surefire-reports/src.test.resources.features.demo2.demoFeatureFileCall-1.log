@@ -1,0 +1,8 @@
+13:25:49.838 [print] {
+  "id": 3686,
+  "name": "name1",
+  "email": "email@email.com",
+  "gender": "male",
+  "status": "active"
+}
+

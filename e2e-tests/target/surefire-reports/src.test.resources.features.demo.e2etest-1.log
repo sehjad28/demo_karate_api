@@ -1,0 +1,143 @@
+15:04:07.290 [print] keep-alive
+15:04:07.293 [print] {
+  "id": 3817,
+  "name": "Mrs Shanita TurnerAuto",
+  "email": "isa.gibson@gmail.com",
+  "gender": "male",
+  "status": "active"
+}
+
+15:04:07.300 request:
+1 > DELETE https://gorest.co.in/public/v2/users/3817
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+15:04:07.972 response time in milliseconds: 671.61
+1 < 204
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72b17f7319c10089-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Date: Fri, 15 Jul 2022 09:33:39 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=h1HYRwAJ8nLXI24NEJ7JONC7gMXEKfoAtRDFMRLzNUd3L7NNRwjboI4xBYK0n%2B4mLBCA%2BOWd2nBgJz%2FJDwgyoft2lMoV0r4uZEoIRVupbfeu3LpmoSWqKKBrW3ubBkU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: 5a8da0ca-2bff-4c47-8014-73059c68cd20
+1 < X-Runtime: 0.021292
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+15:04:07.978 request:
+2 > GET https://gorest.co.in/public/v2/users/3817
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+15:04:09.011 response time in milliseconds: 1028.91
+2 < 404
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 72b17f78f90d730e-LHR
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Fri, 15 Jul 2022 09:33:40 GMT
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=eI%2BzRJNTTY8m8ekYHHkFV9FQFSojiZxYSNR3bOSJn5J%2BfTqZ0LNLz9AYpl90QKWmIDf06abr0EztjrJVaw9JTwhp4HH8xB4ijHvUeuJi3zNb3s02djkFKlzVz%2B%2FFI7Y%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < Transfer-Encoding: chunked
+2 < Vary: [Accept-Encoding, Origin]
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-RateLimit-Limit: 90
+2 < X-RateLimit-Remaining: 89
+2 < X-RateLimit-Reset: 1
+2 < X-Request-Id: a7347680-6b02-47a9-8e8f-91aea9a68d76
+2 < X-Runtime: 0.013776
+2 < X-XSS-Protection: 0
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}
+
+15:04:09.719 [print] Equal
+assertion failed: assert evaluated to false: responseStatus == 401 || responseStatus == 400
+t, <eval>:1:12 Expected ; but found post
+getHeaders()post
+            ^ in <eval> at line number 1 at column number 12
+e41AynxKIyDuk9YLi8iw2T%2BlrVs3lPTkFeElLxJXuiRUAz5XXa5kksEKwtcGMmosdre7QcOnGZFL10JK9Y%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 2
+1 < X-Request-Id: 7afdbc12-ab83-43ca-8842-fcbcdf9da636
+1 < X-Runtime: 0.022511
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+13:36:18.255 [print] Get Call
+13:36:18.273 [print]
+13:36:18.278 request:
+2 > GET https://gorest.co.in/public/v2/users/3701
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+13:36:19.048 response time in milliseconds: 766.04
+2 < 404
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 72b0fed02be3e660-LHR
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Fri, 15 Jul 2022 08:05:50 GMT
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=js8AASizxNT%2FEi3R7zA0zhVWuNunLBWfKTm113vJI2zoBflQcsLTPBhRDGZJiehlPdnPz%2F9IwH2MmKt7xpf%2F%2Fs488ivz2pUgS%2BgsKmePMAUR0RbXi6fQqIa8kcoyzm4%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < Transfer-Encoding: chunked
+2 < Vary: [Accept-Encoding, Origin]
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-RateLimit-Limit: 90
+2 < X-RateLimit-Remaining: 88
+2 < X-RateLimit-Reset: 2
+2 < X-Request-Id: ab6d2440-d204-4152-83a1-69a3a2094b0a
+2 < X-Runtime: 0.013776
+2 < X-XSS-Protection: 0
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}
+

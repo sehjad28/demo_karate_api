@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>src.test.resources.features.demofeaturess.postCreateUser</title>
+<title>src.test.resources.features.demo.e2etest</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,66 +168,87 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Create User</span>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">E2E test flow</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url karate.properties['baseURL']</div>
-<div class="time-cell passed">0.003159</div>
+<div class="time-cell passed">0.002665</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def functions = call read('classpath:karate-config.js')</div>
+<div class="time-cell passed">0.002351</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def createUserResponse = call read('classpath:features/demo/postCreateUser.feature')</div>
+<div class="time-cell passed">2.513173</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">features/demo/postCreateUser.feature</div>
+<div class="time-cell passed">2.497865</div>
+</div>
+<div class="scenario-steps-nested">
+<div class="step-row">
+<div class="step-cell passed">* url karate.properties['baseURL']</div>
+<div class="time-cell passed">0.002288</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def functions = call read('classpath:karate-config.js')</div>
+<div class="time-cell passed">0.006618</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def request_file_path =  searchFileAndReturnContent('createUser.json')</div>
-<div class="time-cell passed">0.011385</div>
+<div class="time-cell passed">0.009032</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def create_user_request = generateRequest(request_file_path)</div>
-<div class="time-cell passed">0.325166</div>
+<div class="time-cell passed">0.278369</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print create_user_request</div>
-<div class="time-cell passed">0.006353</div>
+<div class="time-cell passed">0.004783</div>
 </div>
-<div class="preformatted">18:03:55.362 [print] {"gender":"male","name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","status":"active"}</div>
+<div class="preformatted">15:04:05.078 [print] {"gender":"male","name":"Mrs Shanita TurnerAuto","email":"isa.gibson@gmail.com","status":"active"}</div>
 <div class="step-row">
 <div class="step-cell passed">Given path karate.properties['createuserpath']</div>
-<div class="time-cell passed">0.002919</div>
+<div class="time-cell passed">0.002657</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And headers getmyheaders()</div>
-<div class="time-cell passed">0.054503</div>
+<div class="time-cell passed">0.051864</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request create_user_request</div>
-<div class="time-cell passed">0.00002</div>
+<div class="time-cell passed">0.000023</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">2.18907</div>
+<div class="time-cell passed">2.142216</div>
 </div>
-<div class="preformatted">18:03:56.043 request:
+<div class="preformatted">15:04:05.775 request:
 1 &gt; POST https://gorest.co.in/public/v2/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 102
+1 &gt; Content-Length: 98
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
-{"gender":"male","name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","status":"active"}
+{"gender":"male","name":"Mrs Shanita TurnerAuto","email":"isa.gibson@gmail.com","status":"active"}
 
-18:03:57.608 response time in milliseconds: 1562.82
+15:04:07.275 response time in milliseconds: 1497.49
 1 &lt; 201
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 72a20c33a97971c0-LHR
+1 &lt; CF-RAY: 72b17f6cf8d30722-LHR
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Wed, 13 Jul 2022 12:33:32 GMT
-1 &lt; ETag: W/"2bf358eeb8affa0a04d45d772b78a459"
+1 &lt; Date: Fri, 15 Jul 2022 09:33:39 GMT
+1 &lt; ETag: W/"db733735bfc8c6087b8ea7783f16eec4"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Location: https://gorest.co.in/public/v2/users/4780
+1 &lt; Location: https://gorest.co.in/public/v2/users/3817
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5U%2BgI1bvQPfEgx4ACTJSsTOR1hk5%2BiCYPIUlFAo%2BYsbuMKns28VQ0%2Bv8N5xPPzN1EaG2UioJn9YOCPwzIRN00%2F%2F%2Fg2rdxh9CUE%2FSLqO%2FqHKXxv9Kxqh7anCs6Ak3bK0%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5dbDHDYmg%2FqjHy06x8xaL1hCqfqf3GDbt3EE3r1NE732KGVQRiMzdC4NSvN4DytGExPUnYYWnnncwIohAURUGFaOx0bFSfFUHFAndH2jxd4EwdcB773uY2H%2FeTsQPBo%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 &lt; Transfer-Encoding: chunked
@@ -237,17 +258,166 @@
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
 1 &lt; X-RateLimit-Limit: 90
-1 &lt; X-RateLimit-Remaining: 89
+1 &lt; X-RateLimit-Remaining: 88
 1 &lt; X-RateLimit-Reset: 1
-1 &lt; X-Request-Id: 0bc02c03-5f87-440a-9b5e-aebc415a6cbf
-1 &lt; X-Runtime: 0.019648
+1 &lt; X-Request-Id: 52e63cb9-4dcd-4c44-b890-56fdcd21fca1
+1 &lt; X-Runtime: 0.021372
 1 &lt; X-XSS-Protection: 0
 1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"id":4780,"name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","gender":"male","status":"active"}</div>
+{"id":3817,"name":"Mrs Shanita TurnerAuto","email":"isa.gibson@gmail.com","gender":"male","status":"active"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
 <div class="time-cell passed">0.000015</div>
 </div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* print createUserResponse.responseHeaders.Connection[0]</div>
+<div class="time-cell passed">0.013157</div>
+</div>
+<div class="preformatted">15:04:07.290 [print] keep-alive</div>
+<div class="step-row">
+<div class="step-cell passed">* def createUserResponse = createUserResponse.response</div>
+<div class="time-cell passed">0.002148</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* print createUserResponse</div>
+<div class="time-cell passed">0.000332</div>
+</div>
+<div class="preformatted">15:04:07.293 [print] {
+  "id": 3817,
+  "name": "Mrs Shanita TurnerAuto",
+  "email": "isa.gibson@gmail.com",
+  "gender": "male",
+  "status": "active"
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path karate.properties['path'], createUserResponse.id</div>
+<div class="time-cell passed">0.005066</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And headers getmyheaders()</div>
+<div class="time-cell passed">0.000656</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method Delete</div>
+<div class="time-cell passed">0.674493</div>
+</div>
+<div class="preformatted">15:04:07.300 request:
+1 &gt; DELETE https://gorest.co.in/public/v2/users/3817
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+15:04:07.972 response time in milliseconds: 671.61
+1 &lt; 204
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 72b17f7319c10089-LHR
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Date: Fri, 15 Jul 2022 09:33:39 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=h1HYRwAJ8nLXI24NEJ7JONC7gMXEKfoAtRDFMRLzNUd3L7NNRwjboI4xBYK0n%2B4mLBCA%2BOWd2nBgJz%2FJDwgyoft2lMoV0r4uZEoIRVupbfeu3LpmoSWqKKBrW3ubBkU%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-RateLimit-Limit: 90
+1 &lt; X-RateLimit-Remaining: 89
+1 &lt; X-RateLimit-Reset: 1
+1 &lt; X-Request-Id: 5a8da0ca-2bff-4c47-8014-73059c68cd20
+1 &lt; X-Runtime: 0.021292
+1 &lt; X-XSS-Protection: 0
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 204</div>
+<div class="time-cell passed">0.000021</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path karate.properties['path']</div>
+<div class="time-cell passed">0.000471</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And path createUserResponse.id</div>
+<div class="time-cell passed">0.000303</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And headers getmyheaders()</div>
+<div class="time-cell passed">0.000964</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method Get</div>
+<div class="time-cell passed">1.035614</div>
+</div>
+<div class="preformatted">15:04:07.978 request:
+2 &gt; GET https://gorest.co.in/public/v2/users/3817
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Type: application/json
+2 &gt; Host: gorest.co.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+15:04:09.011 response time in milliseconds: 1028.91
+2 &lt; 404
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 72b17f78f90d730e-LHR
+2 &lt; Cache-Control: no-cache
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Fri, 15 Jul 2022 09:33:40 GMT
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 &lt; Referrer-Policy: strict-origin-when-cross-origin
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=eI%2BzRJNTTY8m8ekYHHkFV9FQFSojiZxYSNR3bOSJn5J%2BfTqZ0LNLz9AYpl90QKWmIDf06abr0EztjrJVaw9JTwhp4HH8xB4ijHvUeuJi3zNb3s02djkFKlzVz%2B%2FFI7Y%3D"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: [Accept-Encoding, Origin]
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Download-Options: noopen
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Permitted-Cross-Domain-Policies: none
+2 &lt; X-RateLimit-Limit: 90
+2 &lt; X-RateLimit-Remaining: 89
+2 &lt; X-RateLimit-Reset: 1
+2 &lt; X-Request-Id: a7347680-6b02-47a9-8e8f-91aea9a68d76
+2 &lt; X-Runtime: 0.013776
+2 &lt; X-XSS-Protection: 0
+2 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 404</div>
+<div class="time-cell passed">0.000026</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And assert responseStatus == 404 || responseStatus == 400</div>
+<div class="time-cell passed">0.012122</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* match response.message == 'Resource not found'</div>
+<div class="time-cell passed">0.004857</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* if (responseStatus == 404) karate.call('test.feature')</div>
+<div class="time-cell passed">0.68814</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def result = response.message == 'Resource not found' ? "Equal" : "Unequal"</div>
+<div class="time-cell passed">0.002804</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* print result</div>
+<div class="time-cell passed">0.000138</div>
+</div>
+<div class="preformatted">15:04:09.719 [print] Equal</div>
 </div>
 </div>
 </body>

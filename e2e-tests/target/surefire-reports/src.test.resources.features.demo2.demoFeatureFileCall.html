@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>src.test.resources.features.demofeaturess.postCreateUser</title>
+<title>src.test.resources.features.demo2.demoFeatureFileCall</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,66 +168,94 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Create User</span>
+<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">calling feature file</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url karate.properties['baseURL']</div>
-<div class="time-cell passed">0.003159</div>
+<div class="time-cell passed">0.002984</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* def request_file_path =  searchFileAndReturnContent('createUser.json')</div>
-<div class="time-cell passed">0.011385</div>
+<div class="step-cell passed">* def functions = call read('classpath:karate-config.js')</div>
+<div class="time-cell passed">0.002954</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def callresponse = call read('classpath:features/demo2/postCreateUser.feature') {name : 'test1',gender : 'male',email : 'test@mail.com',status : 'active'}</div>
+<div class="time-cell passed">2.330121</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">features/demo2/postCreateUser.feature</div>
+<div class="time-cell passed">2.217383</div>
+</div>
+<div class="preformatted">{
+  "name": "test1",
+  "gender": "male",
+  "email": "test@mail.com",
+  "status": "active"
+}
+</div>
+<div class="scenario-steps-nested">
+<div class="step-row">
+<div class="step-cell passed">* url karate.properties['baseURL']</div>
+<div class="time-cell passed">0.002318</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def functions = call read('classpath:karate-config.js')</div>
+<div class="time-cell passed">0.00782</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def request_file_path =  searchFileAndReturnContent('createUser2.json')</div>
+<div class="time-cell passed">0.009121</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def create_user_request = generateRequest(request_file_path)</div>
-<div class="time-cell passed">0.325166</div>
+<div class="time-cell passed">0.084002</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print create_user_request</div>
-<div class="time-cell passed">0.006353</div>
+<div class="time-cell passed">0.000568</div>
 </div>
-<div class="preformatted">18:03:55.362 [print] {"gender":"male","name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","status":"active"}</div>
+<div class="preformatted">13:25:47.709 [print] {"gender":"male","name":"name1","email":"email@email.com","status":"active"}</div>
 <div class="step-row">
 <div class="step-cell passed">Given path karate.properties['createuserpath']</div>
-<div class="time-cell passed">0.002919</div>
+<div class="time-cell passed">0.003191</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And headers getmyheaders()</div>
-<div class="time-cell passed">0.054503</div>
+<div class="time-cell passed">0.007004</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request create_user_request</div>
-<div class="time-cell passed">0.00002</div>
+<div class="time-cell passed">0.000032</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">2.18907</div>
+<div class="time-cell passed">2.103294</div>
 </div>
-<div class="preformatted">18:03:56.043 request:
+<div class="preformatted">13:25:48.368 request:
 1 &gt; POST https://gorest.co.in/public/v2/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 102
+1 &gt; Content-Length: 76
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
-{"gender":"male","name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","status":"active"}
+{"gender":"male","name":"name1","email":"email@email.com","status":"active"}
 
-18:03:57.608 response time in milliseconds: 1562.82
+13:25:49.822 response time in milliseconds: 1449.99
 1 &lt; 201
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 72a20c33a97971c0-LHR
+1 &lt; CF-RAY: 72b0ef70ab20742b-LHR
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Wed, 13 Jul 2022 12:33:32 GMT
-1 &lt; ETag: W/"2bf358eeb8affa0a04d45d772b78a459"
+1 &lt; Date: Fri, 15 Jul 2022 07:55:21 GMT
+1 &lt; ETag: W/"86094f9b42538e87f18d9df31141252f"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Location: https://gorest.co.in/public/v2/users/4780
+1 &lt; Location: https://gorest.co.in/public/v2/users/3686
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5U%2BgI1bvQPfEgx4ACTJSsTOR1hk5%2BiCYPIUlFAo%2BYsbuMKns28VQ0%2Bv8N5xPPzN1EaG2UioJn9YOCPwzIRN00%2F%2F%2Fg2rdxh9CUE%2FSLqO%2FqHKXxv9Kxqh7anCs6Ak3bK0%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LmzMOdAJkovSC0f%2FBHelDib5UPm0LcLzJUh1G0EerMjy8IC4amdqyOMJCkucHx3XjKptzcS19HPdGQgKX3AzLN%2FX5zNpQCERJ980x6uBghRZWfAJWgF1f2NKp2lei%2FU%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 &lt; Transfer-Encoding: chunked
@@ -239,15 +267,27 @@
 1 &lt; X-RateLimit-Limit: 90
 1 &lt; X-RateLimit-Remaining: 89
 1 &lt; X-RateLimit-Reset: 1
-1 &lt; X-Request-Id: 0bc02c03-5f87-440a-9b5e-aebc415a6cbf
-1 &lt; X-Runtime: 0.019648
+1 &lt; X-Request-Id: 6c4311fe-3a03-449b-b8a7-5e994aebf742
+1 &lt; X-Runtime: 0.020260
 1 &lt; X-XSS-Protection: 0
 1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"id":4780,"name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","gender":"male","status":"active"}</div>
+{"id":3686,"name":"name1","email":"email@email.com","gender":"male","status":"active"}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000015</div>
+<div class="time-cell passed">0.000035</div>
 </div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* print callresponse.response</div>
+<div class="time-cell passed">0.010258</div>
+</div>
+<div class="preformatted">13:25:49.838 [print] {
+  "id": 3686,
+  "name": "name1",
+  "email": "email@email.com",
+  "gender": "male",
+  "status": "active"
+}</div>
 </div>
 </div>
 </body>

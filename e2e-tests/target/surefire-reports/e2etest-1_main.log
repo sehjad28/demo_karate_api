@@ -1,0 +1,87 @@
+14:36:20.208 [print] keep-alive
+14:36:20.210 [print] {
+  "id": 3778,
+  "name": "Veola AdamsAuto",
+  "email": "johanne.walsh@yahoo.com",
+  "gender": "male",
+  "status": "active"
+}
+
+14:36:20.215 request:
+1 > DELETE https://gorest.co.in/public/v2/users/3778
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+14:36:21.185 response time in milliseconds: 969.31
+1 < 204
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72b156c16d18719c-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Date: Fri, 15 Jul 2022 09:05:53 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Q5m8kC4mOgIJ%2FmQEA3c%2F4HpEbuIxhPNtZmePIXRtW%2Fu9%2BZjCQRXig%2FPh373ccM5DMs1RiYZEfpI9D%2BUQtoNFNztdix5j8v1gL5s5FQKZcp9wex01lfBJ4JLfvndhcsg%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 88
+1 < X-RateLimit-Reset: 2
+1 < X-Request-Id: 98d12e0f-205d-4ea1-8048-69a11d6a63e7
+1 < X-Runtime: 0.019148
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+14:36:21.198 request:
+2 > GET https://gorest.co.in/public/v2/users/3778
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+2 > Connection: Keep-Alive
+2 > Content-Type: application/json
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+nt: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+14:24:41.639 response time in milliseconds: 1015.98
+2 < 404
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 72b145acfc6372a6-LHR
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Fri, 15 Jul 2022 08:54:13 GMT
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8WmB5U3qYM%2BYEt25Ow1DMDrdzKRSJrET1uN%2FWajwDqyCRm%2BZREqY45amb9JnAU5NB5yHSeR7rhACekLdDKwWCiu3KtdjgmnuwULm%2BqeyRemSkDAtRzIKI%2BLoZRzaH8o%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < Transfer-Encoding: chunked
+2 < Vary: [Accept-Encoding, Origin]
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-RateLimit-Limit: 90
+2 < X-RateLimit-Remaining: 79
+2 < X-RateLimit-Reset: 8
+2 < X-Request-Id: 4ef0f602-3c74-4770-9d65-19600ca60566
+2 < X-Runtime: 0.014637
+2 < X-XSS-Protection: 0
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}
+
+ found"}
+
+

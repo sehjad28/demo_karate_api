@@ -1,0 +1,45 @@
+13:25:47.709 [print] {"gender":"male","name":"name1","email":"email@email.com","status":"active"}
+13:25:48.368 request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Length: 76
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+{"gender":"male","name":"name1","email":"email@email.com","status":"active"}
+
+13:25:49.822 response time in milliseconds: 1449.99
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72b0ef70ab20742b-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 15 Jul 2022 07:55:21 GMT
+1 < ETag: W/"86094f9b42538e87f18d9df31141252f"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: https://gorest.co.in/public/v2/users/3686
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LmzMOdAJkovSC0f%2FBHelDib5UPm0LcLzJUh1G0EerMjy8IC4amdqyOMJCkucHx3XjKptzcS19HPdGQgKX3AzLN%2FX5zNpQCERJ980x6uBghRZWfAJWgF1f2NKp2lei%2FU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: 6c4311fe-3a03-449b-b8a7-5e994aebf742
+1 < X-Runtime: 0.020260
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":3686,"name":"name1","email":"email@email.com","gender":"male","status":"active"}
+
+
+

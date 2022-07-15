@@ -1,7 +1,8 @@
 Feature: demo test feature 
 
   Background:
-    * def token = getHeaders()post
+    * url karate.properties['baseURL']
+    * def functions = call read('classpath:karate-config.js')
 
   @dummy
   Scenario: Just Print

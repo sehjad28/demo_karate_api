@@ -1,0 +1,46 @@
+16:10:18.692 [print]
+16:10:19.941 request:
+1 > GET https://gorest.co.in/public/v2/users/3333
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+16:10:21.330 response time in milliseconds: 1381.68
+1 < 404
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72a9a32108787407-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jul 2022 10:39:55 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ru5TcPsXzAGmuDLYC8CQ3H9qFrBcmaHR2vlzgxjeA6s3nvEcEmMR3A0SePcu3LnyAe2KQ5liPaVHxFxH%2BTHLRRtZZR9ACVJGl5Pgk16VoS0%2Br%2By9xFTtN1QFnSb53wg%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: 66538991-9add-43aa-88d6-f449bc13d8be
+1 < X-Runtime: 0.013785
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}
+
+t found"}
+
+6400, h3-29=":443"; ma=86400
+{"id":3333,"name":"Aagney Talwar","email":"talwar_aagney@oconnell-brekke.com","gender":"female","status":"inactive"}
+
+21:01:49.738 status code was: 200, expected: 404, response time: 1591, url: https://gorest.co.in/public/v2/users/3333, response: {"id":3333,"name":"Aagney Talwar","email":"talwar_aagney@oconnell-brekke.com","gender":"female","status":"inactive"}
+}

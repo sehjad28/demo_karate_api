@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>src.test.resources.features.demofeaturess.postCreateUser</title>
+<title>src.test.resources.features.demo.mytestfile</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,86 +168,29 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Create User</span>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Sample test</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url karate.properties['baseURL']</div>
-<div class="time-cell passed">0.003159</div>
+<div class="time-cell passed">0.004011</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def request_file_path =  searchFileAndReturnContent('createUser.json')</div>
-<div class="time-cell passed">0.011385</div>
+<div class="time-cell passed">0.014023</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* def create_user_request = generateRequest(request_file_path)</div>
-<div class="time-cell passed">0.325166</div>
+<div class="step-cell passed">* json create_user_request = generateRequest(request_file_path)</div>
+<div class="time-cell passed">0.471905</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* print create_user_request</div>
-<div class="time-cell passed">0.006353</div>
-</div>
-<div class="preformatted">18:03:55.362 [print] {"gender":"male","name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","status":"active"}</div>
-<div class="step-row">
-<div class="step-cell passed">Given path karate.properties['createuserpath']</div>
-<div class="time-cell passed">0.002919</div>
+<div class="step-cell passed">* replace create_user_request.status = 'inactive'</div>
+<div class="time-cell passed">0.0028</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And headers getmyheaders()</div>
-<div class="time-cell passed">0.054503</div>
+<div class="step-cell passed">* print 'After --&gt; ', create_user_request</div>
+<div class="time-cell passed">0.00496</div>
 </div>
-<div class="step-row">
-<div class="step-cell passed">And request create_user_request</div>
-<div class="time-cell passed">0.00002</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method post</div>
-<div class="time-cell passed">2.18907</div>
-</div>
-<div class="preformatted">18:03:56.043 request:
-1 &gt; POST https://gorest.co.in/public/v2/users
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 102
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Host: gorest.co.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
-{"gender":"male","name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","status":"active"}
-
-18:03:57.608 response time in milliseconds: 1562.82
-1 &lt; 201
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 72a20c33a97971c0-LHR
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Wed, 13 Jul 2022 12:33:32 GMT
-1 &lt; ETag: W/"2bf358eeb8affa0a04d45d772b78a459"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Location: https://gorest.co.in/public/v2/users/4780
-1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5U%2BgI1bvQPfEgx4ACTJSsTOR1hk5%2BiCYPIUlFAo%2BYsbuMKns28VQ0%2Bv8N5xPPzN1EaG2UioJn9YOCPwzIRN00%2F%2F%2Fg2rdxh9CUE%2FSLqO%2FqHKXxv9Kxqh7anCs6Ak3bK0%3D"}],"group":"cf-nel","max_age":604800}
-1 &lt; Server: cloudflare
-1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Origin
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Download-Options: noopen
-1 &lt; X-Frame-Options: SAMEORIGIN
-1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-RateLimit-Limit: 90
-1 &lt; X-RateLimit-Remaining: 89
-1 &lt; X-RateLimit-Reset: 1
-1 &lt; X-Request-Id: 0bc02c03-5f87-440a-9b5e-aebc415a6cbf
-1 &lt; X-Runtime: 0.019648
-1 &lt; X-XSS-Protection: 0
-1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"id":4780,"name":"Mariela JohnsonAuto","email":"gaye.mccullough@hotmail.com","gender":"male","status":"active"}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000015</div>
-</div>
+<div class="preformatted">16:55:03.454 [print] After --&gt;  {"gender":"male","name":"Nickolas Bode IVAuto","email":"argelia.wyman@hotmail.com","status":"inactive"}</div>
 </div>
 </div>
 </body>

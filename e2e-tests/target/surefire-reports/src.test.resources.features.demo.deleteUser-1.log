@@ -1,0 +1,38 @@
+18:17:59.162 [print] ******************
+18:17:59.171 [print] 4820
+18:17:59.180 request:
+1 > DELETE https://gorest.co.in/public/v2/users/4820
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Type: application/json
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+
+18:17:59.727 response time in milliseconds: 544.99
+1 < 204
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72a220c2efc8a3f5-SIN
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Date: Wed, 13 Jul 2022 12:47:35 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=mNOxnD69DQgGDEH7L9GRxueHJmp4frHv7FkOcDHxQg9P%2FGCfAvsqJZA4osUY%2BZseTw00KvErdwAh3OMShgd%2FQWRp3DaLf8nqcbpNLC9sMCcFjlum%2BdfWAgTqlxvcG0g%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: 986f367c-72ed-4367-8e32-fa89dbb3dda2
+1 < X-Runtime: 0.022409
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+18:17:59.728 [print] 

@@ -1,0 +1,47 @@
+16:55:03.454 [print] After -->  {"gender":"male","name":"Nickolas Bode IVAuto","email":"argelia.wyman@hotmail.com","status":"inactive"}
+"}
+ive"
+}
+
+16:49:01.506 [print] After -->  {
+  "gender": "male",
+  "name": "Reginald RutherfordAuto",
+  "email": "laure.lowe@hotmail.com",
+  "status": "active"
+}
+
+st: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+{"gender":"male","name":"Marlon BayerAuto","email":"hilton.dibbert@gmail.com","status":"active"}
+
+16:22:37.155 response time in milliseconds: 1420.60
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72a9b5180b1d88af-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Jul 2022 10:52:11 GMT
+1 < ETag: W/"6bc4cba2aa718cd6f3965200f1f100e0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: https://gorest.co.in/public/v2/users/3947
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vpk7Z0WChFrlPTaTXzHQnYtjmg%2FYCumWC42IrE2IUWvb792sK42BV0OqWqWle1T2oyO6h%2BrpG6lYmGzBEIvLcqmxk%2BcGNcVqtmhtjOqMfYQKNV8wXdltXarcTndbSoM%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: f074b8cc-fa12-496b-a53a-4c125f33b831
+1 < X-Runtime: 0.021029
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":3947,"name":"Marlon BayerAuto","email":"hilton.dibbert@gmail.com","gender":"male","status":"active"}
+

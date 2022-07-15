@@ -172,63 +172,45 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url karate.properties['baseURL']</div>
-<div class="time-cell passed">0.002684</div>
+<div class="time-cell passed">0.003004</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given path karate.properties['path'], '5555'</div>
-<div class="time-cell passed">0.003037</div>
+<div class="step-cell passed">* def functions = call read('classpath:karate-config.js')</div>
+<div class="time-cell passed">0.002694</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And headers getmyheaders()</div>
-<div class="time-cell passed">0.079627</div>
+<div class="step-cell failed">* def createUserResponse = call read('classpath:features.demofeatures/postCreateUser.feature')</div>
+<div class="time-cell failed">0.002787</div>
+</div>
+<div class="preformatted">deleteUser.feature:8 - javascript evaluation failed: read('classpath:features.demofeatures/postCreateUser.feature'), null</div>
+<div class="step-row">
+<div class="step-cell skipped">* def createUserResponse = createUserResponse.response</div>
+<div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">When method Delete</div>
-<div class="time-cell passed">1.56331</div>
+<div class="step-cell skipped">* print '******************'</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">19:51:00.395 request:
-1 &gt; DELETE https://gorest.co.in/public/v2/users/5555
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Type: application/json
-1 &gt; Host: gorest.co.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
-
-19:51:01.372 response time in milliseconds: 974.78
-1 &lt; 404
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 72922e5e2d6f775b-LHR
-1 &lt; Cache-Control: no-cache
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 11 Jul 2022 14:20:40 GMT
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YItfnNi4LaSI1Zb1X9whFub2LZwt8DwMRJIpQPK30v4NNRgYs6MEqmh7GeeQ3TUQQbcf%2B4PerEJ%2BVGpY1L5%2F83ZfafmSR7slgn2Lgf4uUtVP4UxL7EgHz7%2B3qVSh8c8%3D"}],"group":"cf-nel","max_age":604800}
-1 &lt; Server: cloudflare
-1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: [Accept-Encoding, Origin]
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Download-Options: noopen
-1 &lt; X-Frame-Options: SAMEORIGIN
-1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-RateLimit-Limit: 90
-1 &lt; X-RateLimit-Remaining: 89
-1 &lt; X-RateLimit-Reset: 1
-1 &lt; X-Request-Id: 8af999c5-749c-4595-89b3-08d62ecd2f84
-1 &lt; X-Runtime: 0.012972
-1 &lt; X-XSS-Protection: 0
-1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"message":"Resource not found"}</div>
 <div class="step-row">
-<div class="step-cell failed">Then status 204</div>
-<div class="time-cell failed">0.000347</div>
+<div class="step-cell skipped">* print createUserResponse</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">19:51:01.373 status code was: 404, expected: 204, response time: 975, url: https://gorest.co.in/public/v2/users/5555, response: {"message":"Resource not found"}
-deleteUser.feature:11 - status code was: 404, expected: 204, response time: 975, url: https://gorest.co.in/public/v2/users/5555, response: {"message":"Resource not found"}</div>
+<div class="step-row">
+<div class="step-cell skipped">Given path karate.properties['path'], '&lt;&gt;'</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-cell skipped">And headers getmyheaders()</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-cell skipped">When method Delete</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-cell skipped">Then status 204</div>
+<div class="time-cell skipped">0</div>
+</div>
 <div class="step-row">
 <div class="step-cell skipped">* print response</div>
 <div class="time-cell skipped">0</div>

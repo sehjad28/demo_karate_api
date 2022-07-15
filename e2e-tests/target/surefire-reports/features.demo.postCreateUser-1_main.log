@@ -1,0 +1,48 @@
+15:04:05.078 [print] {"gender":"male","name":"Mrs Shanita TurnerAuto","email":"isa.gibson@gmail.com","status":"active"}
+15:04:05.775 request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 3f2167d98cceaa2dc908d5f5824da9dd6d1e388639795a8125386eb6a0baf0d3
+1 > Connection: Keep-Alive
+1 > Content-Length: 98
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_202)
+{"gender":"male","name":"Mrs Shanita TurnerAuto","email":"isa.gibson@gmail.com","status":"active"}
+
+15:04:07.275 response time in milliseconds: 1497.49
+1 < 201
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72b17f6cf8d30722-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 15 Jul 2022 09:33:39 GMT
+1 < ETag: W/"db733735bfc8c6087b8ea7783f16eec4"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: https://gorest.co.in/public/v2/users/3817
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5dbDHDYmg%2FqjHy06x8xaL1hCqfqf3GDbt3EE3r1NE732KGVQRiMzdC4NSvN4DytGExPUnYYWnnncwIohAURUGFaOx0bFSfFUHFAndH2jxd4EwdcB773uY2H%2FeTsQPBo%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 88
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: 52e63cb9-4dcd-4c44-b890-56fdcd21fca1
+1 < X-Runtime: 0.021372
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":3817,"name":"Mrs Shanita TurnerAuto","email":"isa.gibson@gmail.com","gender":"male","status":"active"}
+
+status":"active"}
+
+}
+
+

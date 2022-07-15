@@ -1,0 +1,109 @@
+12:54:44.831 [print] {
+  "id": 3656,
+  "name": "Renea VonRuedenAuto",
+  "email": "darlena.weber@gmail.com",
+  "gender": "male",
+  "status": "active"
+}
+
+active\"}",
+  "__arg": null,
+  "responseHeaders": {
+    "Date": [
+      "Fri, 15 Jul 2022 07:14:41 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "X-Frame-Options": [
+      "SAMEORIGIN"
+    ],
+    "X-XSS-Protection": [
+      "0"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "X-Download-Options": [
+      "noopen"
+    ],
+    "X-Permitted-Cross-Domain-Policies": [
+      "none"
+    ],
+    "Referrer-Policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "X-RateLimit-Limit": [
+      "90"
+    ],
+    "X-RateLimit-Remaining": [
+      "87"
+    ],
+    "X-RateLimit-Reset": [
+      "1"
+    ],
+    "Location": [
+      "https://gorest.co.in/public/v2/users/3651"
+    ],
+    "ETag": [
+      "W/\"121468fea7b520a83b27d3d4e37c36f4\""
+    ],
+    "Cache-Control": [
+      "max-age=0, private, must-revalidate"
+    ],
+    "X-Request-Id": [
+      "1317082f-56bb-4e6f-b2a9-81a75e2c2407"
+    ],
+    "X-Runtime": [
+      "0.026083"
+    ],
+    "Strict-Transport-Security": [
+      "max-age=63072000; includeSubDomains"
+    ],
+    "Vary": [
+      "Origin"
+    ],
+    "CF-Cache-Status": [
+      "DYNAMIC"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Report-To": [
+      "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2FfRBC2P8F3IOFSl0jl9nsUN%2BIGvvNiSeQAOT%2Bo1%2B9Hudm3dl34bWPuFW3x1qlTv6lxFdmQuD7pwXXG7%2BR5m7uBhWhOSPfAvOjRzKns1hheV2zMw2diu2ZZ5KoNTN%2BYY%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "NEL": [
+      "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "72b0b3e09c881a6a-SIN"
+    ],
+    "alt-svc": [
+      "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    ]
+  },
+  "functions": undefined,
+  "responseTime": 701,
+  "response": {
+    "id": 3651,
+    "name": "Susana HoegerAuto",
+    "email": "suzette.blick@gmail.com",
+    "gender": "male",
+    "status": "active"
+  },
+  "requestTimeStamp": 1657869309035,
+  "request_file_path": "{\r\n  \"name\": \"${fullname}\",\r\n  \"gender\": \"male\",\r\n  \"email\": \"${email}\",\r\n  \"status\": \"active\"\r\n\r\n}",
+  "responseStatus": 201,
+  "__loop": -1,
+  "responseCookies": null
+}
+
